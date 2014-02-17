@@ -95,6 +95,9 @@
     <copy todir="${wildfly.patch.dir}/modules/system/layers/base/org/jboss/osgi/vfs/main" overwrite="true">
         <fileset file="${deploy.artifacts.lib}/jbosgi-vfs*.jar" />
     </copy>
+    <copy todir="${wildfly.patch.dir}/modules/system/layers/base/org/jboss/as/configadmin/main" overwrite="true">
+        <fileset file="${deploy.artifacts.lib}/wildfly-configadmin*.jar" />
+    </copy>
   	
   	<!-- Copy bundle resources-->
     <copy todir="${wildfly.patch.dir}/bundles/org/apache/felix/configadmin/main" overwrite="true">
